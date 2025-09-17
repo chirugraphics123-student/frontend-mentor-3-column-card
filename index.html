@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Column Grid</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .container {
+            overflow-x: hidden;
+            width: 65vw;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 40px;
+            width: 20vw;
+            height: 60vh;
+        }
+
+        .box img {
+            width: 90px;
+        }
+
+        .box .first {
+            font-family: "Big Shoulders", sans-serif;
+            color: white;
+            font-size: 40px;
+            font-weight: 500;
+            /* margin: 28px 0px; */
+        }
+
+        .box .info {
+            color: white;
+            font-family: "Lexend Deca", sans-serif;
+            font-weight: 320;
+            line-height: 23px;
+        }
+
+        .box1 {
+            background-color: #E28625;
+        }
+        .box1 button{
+            color:#E28625
+        }
+        .box2 {
+            background-color: #006971;
+        }
+        .box2 button{
+            color:#006971;
+        }
+        .box3 {
+            background-color: #004140;
+        }
+        .box3 button{
+            color:#004140;
+        }
+        .box button {
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 30px;
+            border: 1px solid white;
+            width: 130px;
+            padding: 12px;
+            border-radius: 40px;
+            transition: all 0.25s ease-in
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+        }
+
+
+        @media (max-width: 820px) {
+            .container {
+                width: 94vw;
+                flex-direction: column;
+            }
+
+            .box {
+                width: 78vw;
+                padding: 40px;
+
+            }
+
+            .box .first {
+                font-size: 28px;
+            }
+
+            .box img {
+                width: 55px;
+            }
+
+            .box button {
+                padding: 14px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <img src="images/icon-sedans.svg" alt="">
+            <p class="first">SEDANS</p>
+            <p class="info">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the
+                city or on your next road trip</p>
+            <button>Learn More</button>
+        </div>
+        <div class="box box2">
+            <img src="images/icon-suvs.svg" alt="">
+            <p class="first">SUVS</p>
+            <p class="info">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family
+                vacation and off-road adventures</p>
+            <button>Learn More</button>
+        </div>
+        <div class="box box3">
+            <img src="images/icon-luxury.svg" alt="">
+            <p class="first">LUXURY</p>
+            <p class="info">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a
+                luxury rental and arrive in style</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</body>
+
+</html>
